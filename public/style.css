@@ -6,6 +6,9 @@
   flex-wrap: wrap;
   background-color: aliceblue;
 }
+.btnClr {
+  height: 30px;
+}
 div {
   height: 100px;
   width: 100px;
@@ -14,6 +17,10 @@ div {
   padding: 8px;
   text-align: center;
 }
-div:hover:not(.container) {
+
+div:hover:not(.container, .btnClr) {
+  background-color: aquamarine;
+}
+.hovered {
   background-color: aquamarine;
 }
