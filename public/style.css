@@ -1,9 +1,8 @@
 .container {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
   height: 50vh; /* Aseta korkeus 50% näytön korkeudesta */
   width: 80vh;
-  padding: 5px; /* Lisää sisennystä lapsielementtien ympärille */
   border: 1px solid black;
 }
 .btnClr,
@@ -14,8 +13,8 @@
   border: 1px solid;
 }
 .row {
-  height: 10px;
-  width: 10px;
+  display: flex;
+  flex-wrap: wrap;
 }
 div {
   height: 10px;
