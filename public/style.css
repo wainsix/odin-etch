@@ -1,9 +1,23 @@
 .container {
   display: flex;
-  justify-content: center;
-  height: 50vh; /* Aseta korkeus 50% näytön korkeudesta */
+  flex-direction: column;
+  height: 50vh;
   width: 80vh;
   border: 1px solid black;
+}
+.row {
+  display: flex;
+  flex-basis: 100%;
+}
+div {
+  flex-basis: 100%;
+}
+
+div:hover:not(.container, .btnClr, .btnNr) {
+  background-color: aquamarine;
+}
+.hovered {
+  background-color: blue;
 }
 .btnClr,
 .btnNr {
@@ -11,20 +25,4 @@
   width: 40px;
   border-radius: 5px;
   border: 1px solid;
-}
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-div {
-  height: 10px;
-  width: 10px;
-  border: 1px solid black;
-}
-
-div:hover:not(.container, .btnClr, .btnNr) {
-  background-color: aquamarine;
-}
-.hovered {
-  background-color: red;
 }
